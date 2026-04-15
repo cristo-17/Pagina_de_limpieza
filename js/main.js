@@ -2,13 +2,13 @@ document.getElementById('miFormulario').addEventListener('submit', function(even
     // Evitar que se recargue la página
     event.preventDefault();
 
-    // Limpiar mensajes de error anteriores (Agregado errorDireccion)
+    // Limpiar mensajes de error anteriores
     document.getElementById('errorNombre').innerHTML = '';
     document.getElementById('errorEmail').innerHTML = '';
     document.getElementById('errorEdad').innerHTML = '';
     document.getElementById('errorDireccion').innerHTML = '';
 
-    // Quitar bordes rojos anteriores (Agregado direccion)
+    // Quitar bordes rojos anteriores
     document.getElementById('nombre').classList.remove('is-invalid');
     document.getElementById('email').classList.remove('is-invalid');
     document.getElementById('edad').classList.remove('is-invalid');
