@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,162 +9,124 @@
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous"
     />
-    <title>Document</title>
+    <title>Service Limpieza AK - Servicios</title>
   </head>
-  <body>
-    <div class="container">
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <a class="navbar-brand">Service Limpieza AK</a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#"
-                  >Inicio</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="Servicios.html">Servicios</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="Galeria.html">Galeria</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="Contactanos.html">Contactanos</a>
-              </li>
-            </ul>
+
+  <body class="bg-light">
+    <nav class="navbar navbar-expand-lg bg-white shadow-sm">
+      <div class="container-fluid">
+        <a class="navbar-brand fw-bold text-primary" href="#"
+          >Service Limpieza AK</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active text-primary fw-bold"
+                aria-current="page"
+                href="Servicios.html"
+                >Servicios</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Galeria.html">Galeria</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Contactanos.html">Contactanos</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main class="container mt-5 mb-5">
+      <h1 class="text-primary mb-4">Nuestros Servicios</h1>
+
+      <div class="card shadow-sm border-0">
+        <div class="card-body p-0">
+          <div class="table-responsive">
+            <table class="table table-striped table-hover align-middle mb-0">
+              <thead class="table-primary">
+                <tr>
+                  <th scope="col" class="col-2 py-3 px-4">Plan</th>
+                  <th scope="col" class="col-1 py-3 text-center">Costo</th>
+                  <th scope="col" class="col-3 py-3">Descripción</th>
+                  <th scope="col" class="col-4 py-3">Especificaciones</th>
+                  <th scope="col" class="col-2 py-3 text-center">Acción</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="fw-bold px-4">Básico Sala</td>
+                  <td class="text-success fw-bold">S/ 120</td>
+                  <td>
+                    Ideal para departamentos pequeños o primera prueba de
+                    Servicio.
+                  </td>
+                  <td>
+                    Limpieza de sofá principal. Aspiradora general de sala.
+                    Desinfección ligera.
+                  </td>
+                  <td class="text-center">
+                    <a href="#" class="btn btn-success btn-sm"
+                      >Agregar al carrito</a
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td class="fw-bold px-4">Premium Hogar</td>
+                  <td class="text-success fw-bold">S/ 220</td>
+                  <td>
+                    Perfecto para familias que desean una limpieza completa.
+                  </td>
+                  <td>
+                    Sala completa (sofás + alfombra). 2 colchones matrimoniales.
+                    Desinfección anti ácaros.
+                  </td>
+                  <td class="text-center">
+                    <a href="#" class="btn btn-success btn-sm"
+                      >Agregar al carrito</a
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td class="fw-bold px-4">Plan Auto & Oficina</td>
+                  <td class="text-success fw-bold">S/ 180</td>
+                  <td>
+                    Para mantener tu auto y tu espacio de trabajo siempre
+                    limpios.
+                  </td>
+                  <td>
+                    Limpieza interior de auto. Sillas de oficina y alfombra.
+                    Aromatización incluida.
+                  </td>
+                  <td class="text-center">
+                    <a href="#" class="btn btn-success btn-sm"
+                      >Agregar al carrito</a
+                    >
+                  </td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </div>
-      </nav>
-      <section>
-        <h1 class="text-center">Servicios</h1>
-        <a href="nuevo_empleado.html" class="btn btn-primary btn-sm">Agregar</a>
-        <table class="table table-striped table-responsive">
-          <thead>
-            <tr>
-              <th>Plan</th>
-              <th>Costo</th>
-              <th>Descripcion</th>
-              <th>Especificaciones</th>
-              <th colspan="1">Acción</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Básico Sala</td>
-              <td>S/120</td>
-              <td>
-                Ideal para departamentos pequeños o primera prueba de Servicio
-              </td>
-              <td>
-                Limpieza de sofá principal Aspiradora general de sala
-                Desinfección ligera
-              </td>
-              <td><a href="#" class="btn btn-success btn-sm">Editar</a></td>
-              <td><a href="#" class="btn btn-danger btn-sm">Eliminar</a></td>
-            </tr>
-            <tr>
-              <td>84514568</td>
-              <td>Estrada Mendoza</td>
-              <td>María Elena</td>
-              <td>mariae@utp.edu.pe</td>
-              <td>963852147</td>
-              <td>Ingeniería Civil</td>
-              <td>Av. Riva Aguero 3456</td>
-              <td><a href="#" class="btn btn-success btn-sm">Editar</a></td>
-              <td><a href="#" class="btn btn-danger btn-sm">Eliminar</a></td>
-            </tr>
-            <tr>
-              <td>84514568</td>
-              <td>Estrada Mendoza</td>
-              <td>María Elena</td>
-              <td>mariae@utp.edu.pe</td>
-              <td>963852147</td>
-              <td>Ingeniería Civil</td>
-              <td>Av. Riva Aguero 3456</td>
-              <td><a href="#" class="btn btn-success btn-sm">Editar</a></td>
-              <td><a href="#" class="btn btn-danger btn-sm">Eliminar</a></td>
-            </tr>
-            <tr>
-              <td>84514568</td>
-              <td>Estrada Mendoza</td>
-              <td>María Elena</td>
-              <td>mariae@utp.edu.pe</td>
-              <td>963852147</td>
-              <td>Ingeniería Civil</td>
-              <td>Av. Riva Aguero 3456</td>
-              <td><a href="#" class="btn btn-success btn-sm">Editar</a></td>
-              <td><a href="#" class="btn btn-danger btn-sm">Eliminar</a></td>
-            </tr>
-            <tr>
-              <td>84514568</td>
-              <td>Estrada Mendoza</td>
-              <td>María Elena</td>
-              <td>mariae@utp.edu.pe</td>
-              <td>963852147</td>
-              <td>Ingeniería Civil</td>
-              <td>Av. Riva Aguero 3456</td>
-              <td><a href="#" class="btn btn-success btn-sm">Editar</a></td>
-              <td><a href="#" class="btn btn-danger btn-sm">Eliminar</a></td>
-            </tr>
-            <tr>
-              <td>84514568</td>
-              <td>Estrada Mendoza</td>
-              <td>María Elena</td>
-              <td>mariae@utp.edu.pe</td>
-              <td>963852147</td>
-              <td>Ingeniería Civil</td>
-              <td>Av. Riva Aguero 3456</td>
-              <td><a href="#" class="btn btn-success btn-sm">Editar</a></td>
-              <td><a href="#" class="btn btn-danger btn-sm">Eliminar</a></td>
-            </tr>
-            <tr>
-              <td>84514568</td>
-              <td>Estrada Mendoza</td>
-              <td>María Elena</td>
-              <td>mariae@utp.edu.pe</td>
-              <td>963852147</td>
-              <td>Ingeniería Civil</td>
-              <td>Av. Riva Aguero 3456</td>
-              <td><a href="#" class="btn btn-success btn-sm">Editar</a></td>
-              <td><a href="#" class="btn btn-danger btn-sm">Eliminar</a></td>
-            </tr>
-            <tr>
-              <td>84514568</td>
-              <td>Estrada Mendoza</td>
-              <td>María Elena</td>
-              <td>mariae@utp.edu.pe</td>
-              <td>963852147</td>
-              <td>Ingeniería Civil</td>
-              <td>Av. Riva Aguero 3456</td>
-              <td><a href="#" class="btn btn-success btn-sm">Editar</a></td>
-              <td><a href="#" class="btn btn-danger btn-sm">Eliminar</a></td>
-            </tr>
-            <tr>
-              <td>84514568</td>
-              <td>Estrada Mendoza</td>
-              <td>María Elena</td>
-              <td>mariae@utp.edu.pe</td>
-              <td>963852147</td>
-              <td>Ingeniería Civil</td>
-              <td>Av. Riva Aguero 3456</td>
-              <td><a href="#" class="btn btn-success btn-sm">Editar</a></td>
-              <td><a href="#" class="btn btn-danger btn-sm">Eliminar</a></td>
-            </tr>
-          </tbody>
-        </table>
-      </section>
-    </div>
+      </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

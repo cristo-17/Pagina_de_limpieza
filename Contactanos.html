@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,87 +9,170 @@
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous"
     />
-    <title>Sevice Limpieza AK</title>
+    <title>Service Limpieza AK - Contacto</title>
   </head>
-  <body>
-    <div class="container">
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <a class="navbar-brand">Service Limpieza AK</a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#"
-                  >Inicio</a
+
+  <body class="bg-light">
+    <nav class="navbar navbar-expand-lg bg-white shadow-sm">
+      <div class="container-fluid">
+        <a class="navbar-brand fw-bold text-primary" href="#"
+          >Service Limpieza AK</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Servicios.html">Servicios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Galeria.html">Galeria</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active text-primary fw-bold"
+                aria-current="page"
+                href="Contactanos.html"
+                >Contactanos</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main class="container mt-5 mb-5">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 col-md-10">
+          <div class="text-center mb-4">
+            <h1 class="text-primary fw-bold">Trabaja con Nosotros</h1>
+            <p class="text-muted">
+              Completa el formulario para registrarte como nuevo empleado.
+            </p>
+          </div>
+
+          <div class="card shadow-sm border-0">
+            <div class="card-body p-4 p-md-5">
+              <form id="miFormulario" novalidate>
+                <div class="row">
+                  <div class="col-md-6 mb-3">
+                    <label class="form-label fw-semibold"
+                      >Nombre Completo <span class="text-danger">*</span></label
+                    >
+                    <input
+                      type="text"
+                      class="form-control bg-light"
+                      id="nombre"
+                      placeholder="Ej: Juan Pérez"
+                    />
+                    <div class="text-danger small mt-1" id="errorNombre"></div>
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <label class="form-label fw-semibold"
+                      >Correo Electrónico
+                      <span class="text-danger">*</span></label
+                    >
+                    <input
+                      type="email"
+                      class="form-control bg-light"
+                      id="email"
+                      placeholder="ejemplo@correo.com"
+                    />
+                    <div class="text-danger small mt-1" id="errorEmail"></div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-md-6 mb-3">
+                    <label class="form-label fw-semibold"
+                      >Edad (18 - 100 años)
+                      <span class="text-danger">*</span></label
+                    >
+                    <input
+                      type="number"
+                      class="form-control bg-light"
+                      id="edad"
+                      placeholder="Ej: 25"
+                    />
+                    <div class="text-danger small mt-1" id="errorEdad"></div>
+                  </div>
+                  <div class="col-md-6 mb-4">
+                    <label class="form-label fw-semibold"
+                      >Dirección de Domicilio
+                      <span class="text-danger">*</span></label
+                    >
+                    <input
+                      type="text"
+                      class="form-control bg-light"
+                      id="direccion"
+                      placeholder="Ej: Av. Los Pinos 123 - Ate"
+                    />
+                    <div
+                      class="text-danger small mt-1"
+                      id="errorDireccion"
+                    ></div>
+                  </div>
+                </div>
+
+                <button
+                  type="submit"
+                  class="btn btn-primary btn-lg w-100 fw-bold"
                 >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="Servicios.html">Servicios</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="Galeria.html">Galeria</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="Contactanos.html">Contactanos</a>
-              </li>
-            </ul>
+                  Registrar Solicitud
+                </button>
+              </form>
+            </div>
           </div>
         </div>
-      </nav>
-      <section>
-        <h1 class="text-center">Nuevo empleado</h1>
-        <form action="">
-          <div class="row">
-            <div class="col">
-              <input
-                type="text"
-                class="form-control mb-4 col-4"
-                placeholder="Coloca tu nombre en este espacio"
-              />
-            </div>
-            <div class="col">
-              <input
-                type="text"
-                class="form-control mb-4 col-4"
-                placeholder="Coloca tus Apellidos en este espacio"
-              />
-            </div>
+      </div>
+    </main>
+
+    <div class="modal fade" id="exitoModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content border-0 shadow">
+          <div class="modal-header bg-success text-white">
+            <h5 class="modal-title fw-bold">¡Registro Exitoso!</h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+              aria-label="Cerrar"
+            ></button>
           </div>
-          <div class="row">
-            <div class="col">
-              <input
-                type="text"
-                class="form-control mb-4 col-4"
-                placeholder="Coloca tu número en este espacio"
-              />
-            </div>
-            <div class="col">
-              <input
-                type="email"
-                class="form-control mb-4 col-4"
-                placeholder="Coloca tu correo en este espacio"
-              />
-            </div>
+          <div class="modal-body text-center py-4">
+            <div class="display-1 text-success mb-3">✓</div>
+            <p id="mensajeExito" class="fs-5 mb-2"></p>
+            <p class="text-muted mb-0">
+              La información ha sido enviada correctamente al sistema de RRHH de
+              Limpieza AK. Nos contactaremos pronto.
+            </p>
           </div>
-          <input
-            type="text"
-            class="form-control mb-4 col-4"
-            placeholder="Dirección del empleado"
-          />
-          <button type="submit" class="btn btn-success col-2">Registrar</button>
-        </form>
-      </section>
+          <div class="modal-footer justify-content-center bg-light border-0">
+            <button
+              type="button"
+              class="btn btn-success px-5"
+              data-bs-dismiss="modal"
+            >
+              Aceptar
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
   </body>
 </html>

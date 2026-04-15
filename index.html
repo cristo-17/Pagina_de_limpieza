@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,48 +9,157 @@
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous"
     />
-    <title>Document</title>
+    <title>Service Limpieza AK - Inicio</title>
   </head>
+
   <body>
-    <div class="container">
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <a class="navbar-brand">Service Limpieza AK</a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#"
-                  >Inicio</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="Servicios.html">Servicios</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="Galeria.html">Galeria</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="Contactanos.html">Contactanos</a>
-              </li>
-            </ul>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary shadow-sm">
+      <div class="container-fluid">
+        <a class="navbar-brand fw-bold" href="#">Service Limpieza AK</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a
+                class="nav-link active text-primary"
+                aria-current="page"
+                href="index.html"
+                >Inicio</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Servicios.html">Servicios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Galeria.html">Galeria</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Contactanos.html">Contactanos</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header class="bg-primary text-white py-5 mb-5 shadow">
+      <div class="container text-center">
+        <h1 class="display-3 fw-bold">Service Limpieza AK</h1>
+        <p class="lead">
+          10 años transformando hogares y oficinas en espacios brillantes. La
+          limpieza va a tu hogar.
+        </p>
+        <button
+          type="button"
+          class="btn btn-info text-white btn-lg fw-bold mt-3"
+          data-bs-toggle="modal"
+          data-bs-target="#miModal"
+        >
+          Ver Horarios y Cobertura
+        </button>
+      </div>
+    </header>
+
+    <section class="container mb-5">
+      <div class="row text-center">
+        <div class="col-md-4 mb-3">
+          <div class="p-4 border rounded bg-light shadow-sm h-100">
+            <h3 class="h5 text-primary">Puntualidad</h3>
+            <p class="small text-muted mb-0">
+              Llegamos exactamente a la hora pactada para no interrumpir tu
+              rutina diaria.
+            </p>
           </div>
         </div>
-      </nav>
-      <section>
-        <h1 class="text-center">10 años de experiencia</h1>
-        <p class="text-center">La limpieza va a tu hogar</p>
-      </section>
+        <div class="col-md-4 mb-3">
+          <div class="p-4 border rounded bg-light shadow-sm h-100">
+            <h3 class="h5 text-primary">Personal Calificado</h3>
+            <p class="small text-muted mb-0">
+              Todo nuestro equipo pasa por rigurosos filtros de seguridad y
+              capacitación.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-4 mb-3">
+          <div class="p-4 border rounded bg-light shadow-sm h-100">
+            <h3 class="h5 text-primary">Eco-Friendly</h3>
+            <p class="small text-muted mb-0">
+              Cuidamos tu salud y el medio ambiente con insumos y productos no
+              tóxicos.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container mb-5">
+      <div class="row align-items-center">
+        <div class="col-md-6 mb-4 mb-md-0">
+          <img
+            src="imagenes/logo-ak.jpg"
+            class="img-fluid rounded shadow"
+            alt="Personal de limpieza trabajando"
+          />
+        </div>
+        <div class="col-md-6">
+          <h2 class="text-primary">Limpieza Profunda Garantizada</h2>
+          <p>
+            Nos encargamos de esos rincones que otros olvidan. Usamos tecnología
+            de vapor para desinfectar al 99.9%, asegurando un ambiente libre de
+            bacterias para tu familia o equipo de trabajo.
+          </p>
+          <a href="Servicios.html" class="btn btn-outline-primary"
+            >Ver todos los servicios</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <div class="modal fade" id="miModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header bg-info text-white">
+            <h5 class="modal-title">Horarios y Cobertura</h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+              aria-label="Cerrar"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <h6 class="text-primary fw-bold">Horarios de Atención:</h6>
+            <ul>
+              <li>Lunes a Viernes: 8:00 AM - 6:00 PM</li>
+              <li>Sábados: 9:00 AM - 1:00 PM</li>
+            </ul>
+            <hr />
+            <h6 class="text-primary fw-bold">Zonas de Cobertura:</h6>
+            <p>Brindamos servicios en todo Lima Metropolitana y Callao.</p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Cerrar
+            </button>
+            <a href="Contactanos.html" class="btn btn-primary">Agendar cita</a>
+          </div>
+        </div>
+      </div>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
